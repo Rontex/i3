@@ -1,4 +1,4 @@
-i3 configurations files 
+i3 own style configuration styles
 
 Dependencies
 
