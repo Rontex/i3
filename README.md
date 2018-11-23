@@ -2,4 +2,5 @@ i3 own style configuration styles
 
 Dependencies
 
--pnmixer
+- pnmixer
+- ffmpeg (for i3lock)
