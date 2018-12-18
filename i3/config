@@ -5,6 +5,11 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+#start polybar
+#exec --no-startup-id $HOME/.config/polybar/launch.sh
+
+#feh wallpaper
+exec "feh --bg-scale /home/nettis/.config/i3/background/background.jpg"
 
 # i3 config file (v4)
 #
@@ -23,6 +28,13 @@ font pango:Dejavu Sans Mono 11
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 10
+
+
+# border colors, edit as you like
+#  		  border   bg	   text	   indicator  child_brder
+client.focused 	  #000202  #787070 #ffffff #000202    #000202	
+client.unfocused  #000202  #000202 #ffffff #000202    #000202
+
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -54,7 +66,8 @@ bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 #lock screen
-bindsym $mod4+l exec i3lock
+bindsym $mod4+l exec "bash ~/.config/i3/lock"
+
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
